@@ -1,0 +1,20 @@
+{
+  "name": "nodesysinfo",
+  "version": "1.0.0",
+  "description": "Library for extracting hardware information from the current system.",
+  "main": "dist/lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sysinfo",
+    "nodesysinfo",
+    "system",
+    "information"
+  ],
+  "author": "kernel",
+  "license": "MIT",
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  }
+}
