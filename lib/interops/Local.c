@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <IOKit/IOKitLib.h>
 
-extern uint32_t cpuid_data(void);
+extern uint32_t cpuid_eax(uint32_t function_id);
 
 void format_cpuid_data(CPU_VERSION_INFORMATION *Buffer)
 {
-    uint32_t extracted = cpuid_data();
+    uint32_t extracted = cpuid_eax(0x1);
 
     if (extracted > 0)
     {
